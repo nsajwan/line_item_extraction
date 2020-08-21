@@ -1,4 +1,5 @@
 import cv2
+from google.colab.patches import cv2_imshow
 from line_item_extraction.line import line_detection
 
 
@@ -52,9 +53,6 @@ def extract_table(table_body, __line__, lines=None):
     for point in points:
         for x, y in point:
             cv2.line(table, (x, y), (x, y), (0, 0, 255), 8)
-
-    cv2.imshow("intersection", table)
-    cv2.waitKey(0)
 
     # boxno = -1
     box = []
