@@ -1,5 +1,5 @@
 import cv2
-from Functions.line_detection import line_detection
+from line_item_extraction.line import line_detection
 
 
 ##################  Functions required for Border table Recognition #################

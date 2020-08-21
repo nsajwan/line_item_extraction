@@ -1,4 +1,4 @@
-from tsr.border import extract_table,extractText,span
+from line_item_extraction.border import extract_table,extractText,span
 import lxml.etree as etree
 import cv2
 

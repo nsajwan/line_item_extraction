@@ -1,6 +1,6 @@
 import numpy as np
 import cv2
-from Functions.borderFunc import extract_table
+from line_item_extraction.border import extract_table
 from lxml import etree
 
 
