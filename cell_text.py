@@ -141,7 +141,7 @@ def borderless(table, image, res_cells):
     row.append(table[3])
     maxr = 0
     for r2 in final_rows:
-        print(r2)
+        #print(r2)
         if len(r2) > maxr:
             maxr = len(r2)
 
@@ -159,7 +159,7 @@ def borderless(table, image, res_cells):
                 if col[0] < lastx[n][0]:
                     lastx[n][0] = col[0]
 
-    print(lastx)
+    #print(lastx)
     for r2 in final_rows:
         if len(r2) != 0:
             r = 0
@@ -177,7 +177,7 @@ def borderless(table, image, res_cells):
                     if col[2] > lastx[n][1]:
                         lastx[n][1] = col[2]
 
-    print(lastx)
+    #print(lastx)
     col = np.zeros(maxr + 1)
     col[0] = table[0]
     prev = 0
@@ -203,7 +203,7 @@ def borderless(table, image, res_cells):
         cv2.line(im2, (table[0], c), (table[2], c), (255, 0, 0), 1)
 
     # cv2_imshow(im2)
-    print("table:", table)
+    #print("table:", table)
     # for r in row:
     #   cv2.line(im2,(r,table[1]),(r,table[3]),(0,255,0),1)
     # for c in col:
